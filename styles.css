@@ -217,7 +217,7 @@ nav ul li a:hover::after{
 
 .about-col-2 p{
     color: aliceblue;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -267,6 +267,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li p{
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .tab-contents {
@@ -762,6 +763,12 @@ nav .fas{
     }
     .about-col-1{
         margin-bottom: 30px;
+    }
+    .about-col-2 p{
+	font-size: 14px;
+    }
+    .tab-contents ul li p{
+	font-size: 14px;
     }
     .about-col-2{
         font-size: 14px;
