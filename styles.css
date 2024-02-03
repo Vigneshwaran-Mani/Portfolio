@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/* Scrolling Properties*/
 html{
     scroll-behavior: smooth;
 }
@@ -22,10 +28,7 @@ html{
     border-radius: 10px;
 }
 
-body{
-    background: #080808;
-    color: #fff;
-}
+/*Header Styling*/
 
 #header{
     width: 100%;
@@ -51,16 +54,16 @@ nav img{
     height: 60px;
     color: #000;
     margin-top: 10px;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+    /*opacity: 0;
+    animation: slideRight 1s ease forwards;*/
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
+    /*opacity: 0;
+    animation: slideTop .5s ease forwards;*/
 }
 
 nav ul li a{
@@ -68,8 +71,8 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
+    /*opacity: 0;
+    animation: slideTop .5s ease forwards;*/
 }
 
 nav ul li a::after{
@@ -94,17 +97,17 @@ nav ul li a:hover::after{
 
 .header-text p{
     letter-spacing: .08em;
-    opacity: 0;
+    /*opacity: 0;
     animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
+    animation-delay: .7s;*/
 }
 
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    opacity: 0;
+    /*opacity: 0;
     animation: slideRight 1s ease forwards; 
-    animation-delay: 1s;
+    animation-delay: 1s;*/
 }
 
 .header-text h1 span{
@@ -121,17 +124,9 @@ nav ul li a:hover::after{
     color: #64FFDA;
 }
 
-/*@keyframes typing{
-    from {width: 0}
-    to {width: 25%}
-}
+/*Animation part for Sliding style*/
 
-@keyframes blink{
-    from {border-color: transparent}
-    to {border-color: orange}
-}*/
-
-@keyframes slideRight{
+/*@keyframes slideRight{
     0%{
         transform: translateX(-100px);
         opacity: 0;
@@ -175,6 +170,17 @@ nav ul li a:hover::after{
     }
 }
 
+@keyframes slideIn{
+    0%{
+        margin-left: -100%;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 1;
+    }
+}*/
+
 
 /*-----------about----------*/
 
@@ -199,6 +205,8 @@ nav ul li a:hover::after{
     box-shadow: 0 0 5px #0ef,
     0 0 15px rgb(165, 236, 241),0 0 20px rgb(184, 233, 236),
     0 0 100px #0ef,0 0 200px #0ef;
+    /*opacity: 0;
+    animation: slideIn 1s ease forwards; */
 }
 
 .about-col-2{
@@ -217,7 +225,7 @@ nav ul li a:hover::after{
 
 .about-col-2 p{
     color: aliceblue;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -267,7 +275,6 @@ nav ul li a:hover::after{
 
 .tab-contents ul li p{
     margin-top: 5px;
-    font-size: 14px;
 }
 
 .tab-contents {
@@ -278,7 +285,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*----------section--------*/
+/*Buttons Styling for CV and Submit*/
 
 .btn{
     display: block;
@@ -333,67 +340,6 @@ nav ul li a:hover::after{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
 }
-
-/*.professional-skill{
-    padding-left: 20%;
-    color: white;
-}
-
-.professional-skill h3{
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 60px;
-    color: white;
-}
-
-.professional-progress li{
-    display: inline-block;
-    margin: 0 auto;
-    float: none;
-    width: 48%;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.progress{
-    margin-bottom: 10px;
-    font: 900 1.14285/1 Cinzerl, cursive;
-    color: white;
-}
-
-.progress .progressbar-text{
-    color: inherit !important;
-}
-
-.progress.progress-line{
-    height: 10px;
-    margin-right: 60px;
-}
-
-.progress.progress-line .progress-text{
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    width: 60px;
-    transform: translateY(-35%);
-    text-align: center;
-}
-
-.progress.progress-circle{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-}
-
-.progress path:nth-child(1){
-    stroke: rgba(0, 0, 0, 0.7);
-}
-
-.progress path:nth-child(2){
-    stroke: #0bceaf !important;
-}*/
 
 .heading1{
     font-size: 30px;
@@ -712,7 +658,7 @@ form .btn2{
     margin-top: -10px;
 }
 
-/*---------------------small screens----------*/
+/*---------------small screens----------*/
 
 nav .fas{
     display: none;
@@ -763,12 +709,6 @@ nav .fas{
     }
     .about-col-1{
         margin-bottom: 30px;
-    }
-    .about-col-2 p{
-	font-size: 16px;
-    }
-    .tab-contents ul li p{
-	font-size: 12px;
     }
     .about-col-2{
         font-size: 14px;
@@ -858,6 +798,8 @@ nav .fas{
 .skills, .professional-skills{
     padding-right: 60px;
 }
+
+/*Animation Part for Background*/
 .wrapper span {
 	position: fixed;
 	bottom: -180px;

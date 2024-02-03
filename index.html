@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vigneshwaran</title>
+    <!--Website Icon-->
     <link rel="icon" href="images/img5.png">
+    <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!--AOS CDN Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS Stylesheet-->
     <link rel="stylesheet" href="styles.css">
+    <!--Script Link for Typewriting Effect-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-    <!--<div class="backgroundAnim"></div>-->
+
+    <!-----------Background Animation---------->
     <div class="wrapper">
 		<span></span>
 		<span></span>
@@ -25,36 +31,42 @@
 		<span></span>
     </div>
 
+    <!-------------Header------------->
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/img5.png" class="logo" alt="">
+                <img src="images/img5.png" data-aos="fade-right" data-aos-duration="1500" class="logo" alt="">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skils">Skills</a></li>
+                    <li data-aos="fade-up" data-aos-duration="1500"><a href="#header">Home</a></li>
+                    <li data-aos="fade-up" data-aos-duration="1500"><a href="#about">About</a></li>
+                    <li data-aos="fade-up" data-aos-duration="1500"><a href="#skils">Skills</a></li>
                     <!--<li><a href="#">Portfolio</a></li>-->
-                    <li><a href="#contact">Contact</a></li>
+                    <li data-aos="fade-up"data-aos-duration="1500" ><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Vigneshwaran</span></h1>
-                <p id="demo">I am a <span class="text"></span></p>
+                <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">Web Developer</p>
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">Hi, I'm <span>Vigneshwaran</span></h1>
+                <p id="demo" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">I am a <span class="text"></span></p>
             </div>
         </div>
     </div>
+
+    <!-------------------About------------------->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="images/user1.jpg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h2 class="sub-title">About<span>Me</span></h2>
-                    <p>I am a student, who have passionate about exploring the latest technologies and developing innovative solutions to complex problems. Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.</p>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                    <h2 class="sub-title" >About<span>Me</span></h2>
+                    <p >I am a student, who have passionate about exploring the latest technologies and developing innovative solutions to complex problems. Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.</p>
+                    </div>
+                <div data-aos="fade-left" data-aos-duration="1500">
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('tools')">Tools</p>
@@ -81,16 +93,17 @@
                         </ul>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!---------------------skills-------------->
-    <h1 class="skill-title" id="skils">My <span>Skills</span></h1>
+    <!---------------------skills------------------------>
+    <h1 class="skill-title" id="skils" data-aos="fade-right" data-aos-duration="1500">My <span>Skills</span></h1>
    <div class="skills">
         <div class="container">
             <div class="row">
-                <div class="skill-left">
+                <div class="skill-left" data-aos="fade-right" data-aos-duration="1500">
                     <div class="skills-inner">
                         <div class="professional-skills">
                             <h3>Technical Skills</h3>
@@ -154,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-right">
+                <div class="skill-right" data-aos="fade-left" data-aos-duration="1500">
                     <h1 class="heading1">Professional Skills</h1>
                     <div class="radial-bars">
                     <div class="radial-bar">
@@ -195,12 +208,12 @@
         </div>
    </div>
 
-    <!----------------------contact-------------->
+    <!----------------------contact----------------------->
 
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i>vigneshwaran76079@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i>9025622422</p>
@@ -230,7 +243,7 @@
                     </div>
                     <a href="images/Vigneshwaran Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-right" data-aos-duration="1000">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
@@ -241,12 +254,25 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright" >
             <p>Developed by <a href="https://www.linkedin.com/in/vigneshwaranmanikandan/" target="_blank">Vigneshwaran</a> &copy; <span id="year"></span>.</p>
         </div>
     </div>
 
+    <!----------------Javascript---------------->
+
+    <!--AOS Javascript Link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--AOS Javascript Initialization-->
     <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        
+        //For Typewriting Effect
         var typed =new Typed('.text',{
             strings: ["Student","Programmer","Web Developer"],
             typeSpeed:100,
@@ -255,11 +281,13 @@
             loop:true
         });
 
+        //For Year in Footer
         var year = document.getElementById("year");
         const d = new Date();
         year.innerHTML= d.getFullYear();
-        console.log(year);
+        //console.log(year);
 
+        //For activating and deactivating Tabs in About Section
         var tabLinks=document.getElementsByClassName("tab-links");
         var tabContents=document.getElementsByClassName("tab-contents");
 
@@ -274,6 +302,7 @@
             document.getElementById(tabName).classList.add("active-tab");
         }
 
+        //For opening and closing of Navbar in Mobile version
         var sidemenu = document.getElementById("sidemenu");
 
         function openmenu(){
@@ -284,8 +313,13 @@
             sidemenu.style.right="-200px";
         }
     </script>
+
     <script>
+        //For storing information from Form to Spreadsheet
+
+        //Link to Sheet
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwWkIahppzlVjs6bDUeSXmdxujaSNE_ihaUC7jBQjvqScvZBKnm3zhZtVc7Bm4T6BES/exec'
+        
         const form = document.forms['submit-to-google-sheet']
         const msg=document.getElementById("msg");
       
